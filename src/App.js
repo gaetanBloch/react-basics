@@ -11,6 +11,10 @@ const App = () => {
     ]
   });
 
+  const [otherState, setOtherState] = useState('some other value');
+
+  console.log({personsState, otherState});
+
   const switchNameHandler = () => {
     setPersonsState({
         persons: [
@@ -37,13 +41,14 @@ const App = () => {
 }
 
 // class App extends Component {
-//   state = {
-//     persons: [
-//       {name: 'Gaëtan', age: 31},
-//       {name: 'Patrick', age: 30},
-//       {name: 'Sandra', age: 32}
-//     ]
-//   };
+// state = {
+//   persons: [
+//     {name: 'Gaëtan', age: 31},
+//     {name: 'Patrick', age: 30},
+//     {name: 'Sandra', age: 32}
+//   ],
+//   otherState: 'some other state'
+// };
 //
 //   switchNameHandler = () => {
 //     // DON'T DO THIS: this.state.persons[0].name = 'Jeremy';
